@@ -1,8 +1,4 @@
-{
-    :root 
-    --cor-de-fundo-do-titulo: #f06
-}
-
+/* resertar meu CSS */
 
 * {
     margin: 0;
@@ -35,12 +31,13 @@ h1 {
 }
 
 
-main img {
+.perfil {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 main {
@@ -49,18 +46,21 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2) ;/* 1 */
-    padding: 1rem;
-    background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
+}
+
+aside h2 {
+    position:absolute;
+    top: 5px;
+    left: 50px;
 }
 
 
@@ -73,3 +73,21 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+
+  /*Seletores de Classe*/
+  
+  .caixa{
+    border: 1px solid rgba(0, 0, 0, 2);
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #eee;
+  }
+
+  .indentacao{
+    padding-left: 2rem;
+
+  }
+  
+
+
