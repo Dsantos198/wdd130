@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #055a05; 
+    --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
@@ -13,33 +13,55 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
 }
 
-/* ✅ corrigido */
-header, main {
+/* Layout */
+header,
+main {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2 {
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 120px;
+}
+
+/* Navegação */
+nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--cor-destaque1);
+}
+
+/* Títulos */
+h1,
+h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
-nav, p, section, article {
+/* Espaçamento */
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
 
-/* ✅ corrigido */
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* Hero */
 .hero {
     position: relative;
 }
@@ -64,7 +86,7 @@ nav, p, section, article {
     bottom: 0;
     left: 20px;
     right: 20px;
-    background-color: var(--cor-destaque2); /* ✅ variável usada */
+    background-color: var(--cor-destaque2);
     padding: 15px;
 }
 
@@ -75,26 +97,27 @@ nav, p, section, article {
     border: 2px solid var(--cor-primaria);
 }
 
-nav a {
-    display: block;
-}
-
-/* ✅ footer correto */
-footer {
-    background-color: var(--cor-primaria);
-    color: white;
-    padding: 20px;
-}
-
-footer p, 
-footer nav {
-    max-width: 840px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* ✅ outra variável usada */
+/* Seções */
 section {
     background-color: var(--cor-secundaria);
 }
-``
+
+/* Footer */
+footer {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 20px;
+}
+
+/* ÍCONES GRANDES ✅ */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* 👉 NÃO DEFINIMOS width pequena → mantém grande */
+.socialmedia img {
+    height: 80px; /* controla altura sem distorcer */
+}
