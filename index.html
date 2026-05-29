@@ -5,83 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Victor | WDD 130 | Página Inicial</title>
-    <meta nome="description" content="Página de Davi Victor">
-    <meta nome="author" content="Davi Victor dos Santos">
+
+    <meta name="description" content="Página de Davi Victor">
+    <meta name="author" content="Davi Victor dos Santos">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav>
-            <a href="#">Inicio</a>
+            <a href="#">Início</a>
             <a href="wwr/sobre.html">Site de Rafting</a>
             <a href="wwr/mapa-do-site.html">Mapa do Site</a>
-            <a href="https://www.linkedin.com/in/davi-victor-santos/" target="_blank">Perfil do Linkedin</a>
+            <a href="https://www.linkedin.com/in/davi-victor-santos/" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
         </nav>
     </header>
 
-    <main>
-        <h1 class="indentacao">Davi victor | WDD 130</h1>
+    <!-- GRID PRINCIPAL -->
+    <div class="grid">
 
-        <img src="imagens/perfil.jpg" alt="Foto de perfil de Davi Victor" class="perfil">
-
-        <p class="indentacao">
-            Olá, meu nome é Davi,
-            sou natural da cidade de João Pessoa na Paraíba!
-            Estou estudando engenharia de softwere pela BYU Idaho,
-            tenho como hobby cozinhar, amo de verdade.
-        </p>
-
-        <p class="indentacao">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Possimus odit perspiciatis corrupti rem aspernatur
-            quam commodi reprehenderit hic nihil. Repellendus!
-        </p>
-
-        <ul class="caixa indentacao">
-            <li>
-                <a href="https://churchofjesuschristtemples.org/recife-brazil-temple/">
-                    <torget="_blank">Templo do Recife, Brasil</torget>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://churchofjesuschristtemples.org/salt-lake-temple/">
-                    <torget="_blank">Templo de Salt Lake, EUA</torget>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://churchofjesuschristtemples.org/nauvoo-illinois-temple/">
-                    <torget="_blank">Templo de Nauvoo Illinois, EUA</torget>
-                </a>
-            </li>
-        </ul>
-
-        <aside class="caixa indentacao">
-            <h2>João Pessoa</h2>
-            <img src="imagens/orla-de-joao-pessoa.avif" alt="Orla de joão Pessoa">
-            <p>Orla de João Pessoa, um dos cartôes postais mais visitado da Paraíba.</p>
+        <!-- ASIDE (lado esquerdo) -->
+        <aside class="caixa">
+            <h2>João Pessoa, PB</h2>
+            <img src="imagens/orla-de-joao-pessoa.avif" alt="Orla de João Pessoa">
+            <p>
+                A orla de João Pessoa é um dos principais cartões postais da Paraíba,
+                conhecida por suas belas praias e paisagens naturais.
+            </p>
         </aside>
-    </main>
 
-   <footer>
-    <p>©2026 🌴 Davi Victor 🌴 Paraíba, Brasil</p>
+        <!-- MAIN (lado direito) -->
+        <main>
 
-    <nav class="redes-sociais">
-        <a href="https://www.facebook.com/">
-            <img src="imagens/facebook.png" alt="Ícone do Facebook">
-        </a>
+            <h1>Davi Victor | WDD 130</h1>
 
-        <a href="https://www.instagram.com/">
-            <img src="imagens/instagram.png" alt="Ícone do Instagram">
-        </a>
+            <img src="imagens/perfil.jpg" alt="Foto de perfil de Davi Victor" class="perfil">
 
-        <a href="https://www.linkedin.com/">
-            <img src="imagens/linkedin.png" alt="Ícone do Linkedin">
-        </a>
-    </nav>
-</footer>
+            <p>
+                Olá! Meu nome é Davi, sou natural da cidade de João Pessoa, Paraíba.
+                Atualmente estudo Engenharia de Software pela BYU Idaho e tenho como hobby cozinhar.
+            </p>
+
+            <p>
+                Estou buscando desenvolver minhas habilidades em programação e design web,
+                com foco em criar projetos modernos e bem estruturados.
+            </p>
+
+            <!-- LISTA -->
+            <ul class="caixa">
+                <li>
+                    <a href="https://churchofjesuschristtemples.org/recife-brazil-temple/" target="_blank">
+                        Templo do Recife, Brasil
+                    </a>
+                </li>
+                <li>
+                    <a href="https://churchofjesuschristtemples.org/salt-lake-temple/" target="_blank">
+                        Templo de Salt Lake, EUA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://churchofjesuschristtemples.org/nauvoo-illinois-temple/" target="_blank">
+                        Templo de Nauvoo Illinois, EUA
+                    </a>
+                </li>
+            </ul>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>©2026 🌴 Davi Victor 🌴 Paraíba, Brasil</p>
+    </footer>
+
 </body>
-
 </html>
