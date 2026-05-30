@@ -17,10 +17,10 @@
     padding: 0;
 }
 
-/* base ✅ IMPORTANTE (corrige contraste) */
+/* base */
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-primaria);
+    color: var(--cor-primaria); /* ✅ cor padrão acessível */
 }
 
 /* títulos */
@@ -37,18 +37,19 @@ header {
     padding: 10px;
 }
 
-/* menu */
+/* ✅ MENU CORRIGIDO (ACESSIBILIDADE OK) */
 .grid {
     display: flex;
     justify-content: space-around;
     list-style: none;
     background-color: var(--cor-secundaria);
     padding: 10px;
+    color: #000; /* ✅ evita herdar verde */
 }
 
 .grid a {
     text-decoration: none;
-    color: var(--cor-branco); /* ✅ contraste corrigido */
+    color: #000; /* ✅ contraste correto */
     font-weight: bold;
 }
 
