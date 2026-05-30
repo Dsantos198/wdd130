@@ -11,10 +11,10 @@
 }
 
 /* reset */
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* base */
@@ -113,8 +113,8 @@ header {
 .galeria {
     display: flex;
     gap: 10px;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center; /* melhor centralização */
+    flex-wrap: wrap; /* evita quebrar o layout */
 }
 
 .galeria img {
@@ -136,7 +136,7 @@ footer {
 }
 
 footer p {
-    margin-bottom: 100px; /* 👈 só cria espaço entre o texto e os ícones */
+    margin-bottom: 20px; /* 👈 só cria espaço entre o texto e os ícones */
 }
 
 .socialmedia {
