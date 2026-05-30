@@ -11,15 +11,15 @@
 }
 
 /* reset */
-*, *::before, *::after {
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* base */
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-primaria); /* 👈 COR PADRÃO segura */
 }
 
 /* títulos usando variável ✅ */
@@ -46,8 +46,8 @@ header {
 }
 
 .grid a {
-    color: var(--cor-branco);
     text-decoration: none;
+    color: #000; /* ✅ contraste corrigido */
     font-weight: bold;
 }
 
@@ -93,12 +93,7 @@ header {
     padding: 20px;
 }
 
-.conteudo-historia p {
-    max-width: 400px;
-}
-
-.conteudo-historia p:last-child {
-    justify-self: start;
+.conteudo-historia p:first-child {
     text-align: left;
 }
 
@@ -107,14 +102,19 @@ header {
     max-width: 100%;
 }
 
-
+/* ✅ começa da imagem */
+.conteudo-historia p:last-child {
+    justify-self: start;
+    text-align: left;
+    max-width: 400px;
+}
 
 /* galeria */
 .galeria {
     display: flex;
     gap: 10px;
-    justify-content: center; /* melhor centralização */
-    flex-wrap: wrap; /* evita quebrar o layout */
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .galeria img {
@@ -129,10 +129,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* 👈 coloca conteúdo no topo */
     background: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: 20px;
+    padding: 20px; /* 👈 valor normal */
 }
 
 footer p {
@@ -145,13 +145,11 @@ footer p {
     gap: 10px;
 }
 
+/* section */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--cor-primaria);
     border: 20px solid var(--cor-primaria);
-    padding: 20px; /* 👈 opcional */
 }
-
-
