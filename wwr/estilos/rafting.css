@@ -1,51 +1,54 @@
 :root {
-    --cor-primaria: #055a05; 
+    --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
-    --fonte-titulo: "Times New Roman", Georgia, serif;
-    --fonte-body: Arial, Helvetica, sans-serif;
+    --fonte-titulo: "times new roman", serif;
+    --fonte-body: arial, sans-serif;
 }
 
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* base */
+body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
 }
 
-/* ✅ corrigido */
-header, main {
-    width: 840px;
-    margin: 0 auto;
+/* header */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
 }
 
-h1, h2 {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
-    text-align: center;
+/* menu */
+.grid {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--cor-secundaria);
+    padding: 10px;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* ✅ corrigido */
-.socialmedia a {
+.grid a {
     text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: bold;
 }
 
+/* hero */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
 }
 
@@ -53,10 +56,10 @@ nav, p, section, article {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    background: var(--cor-destaque1);
+    color: white;
     text-align: center;
-    background-color: var(--cor-destaque1);
-    color: #fff;
+    padding: 10px;
 }
 
 .hero article {
@@ -64,36 +67,79 @@ nav, p, section, article {
     bottom: 0;
     left: 20px;
     right: 20px;
-    background-color: var(--cor-destaque2); /* ✅ variável usada */
-    padding: 15px;
+    background: var(--cor-destaque2);
+    padding: 10px;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 10px;
-    border: 2px solid var(--cor-primaria);
+    width: 120px;
 }
 
-nav a {
-    display: block;
+/* ✅ HISTÓRIA PERFEITA */
+.conteudo-historia {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
-/* ✅ footer correto */
+/* texto esquerda */
+.conteudo-historia p:first-child {
+    text-align: left;
+}
+
+/* imagem central */
+.conteudo-historia img {
+    justify-self: center;
+    max-width: 100%;
+}
+
+/* ✅ TEXTO DIREITA COMEÇANDO DA IMAGEM */
+.conteudo-historia p:last-child {
+    justify-self: start;   /* 🔥 IMPORTANTE */
+    text-align: left;
+    max-width: 400px;
+}
+
+/* galeria */
+.galeria {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+/* footer */
 footer {
-    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-primaria);
     color: white;
     padding: 20px;
 }
 
-footer p, 
-footer nav {
-    max-width: 840px;
-    margin: 0 auto;
-    text-align: center;
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* ✅ outra variável usada */
+/* section */
 section {
-    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-primaria);
+    border: 20px solid var(--cor-primaria);
 }
