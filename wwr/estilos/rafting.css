@@ -17,9 +17,9 @@
     padding: 0;
 }
 
-/* base */
 body {
     font-family: var(--fonte-body);
+    color: var(--cor-primaria); /* 👈 COR PADRÃO segura */
 }
 
 /* títulos usando variável ✅ */
@@ -129,10 +129,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* 👈 coloca conteúdo no topo */
+    justify-content: flex-start;
     background: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: 20px; /* 👈 valor normal */
+    padding: 20px;
 }
 
 footer p {
@@ -153,4 +153,5 @@ section {
     color: var(--cor-primaria);
     border: 20px solid var(--cor-primaria);
 }
+
 
