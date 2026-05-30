@@ -3,6 +3,9 @@
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
+    --cor-fundo-claro: #ddd;
+    --cor-branco: #ffffff;
+
     --fonte-titulo: "times new roman", serif;
     --fonte-body: arial, sans-serif;
 }
@@ -19,12 +22,17 @@ body {
     font-family: var(--fonte-body);
 }
 
+/* títulos usando variável ✅ */
+h1, h2 {
+    font-family: var(--fonte-titulo);
+}
+
 /* header */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-    background-color: #ddd;
+    background-color: var(--cor-fundo-claro);
     padding: 10px;
 }
 
@@ -39,7 +47,7 @@ header {
 
 .grid a {
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: #000; /* ✅ contraste corrigido */
     font-weight: bold;
 }
 
@@ -57,7 +65,7 @@ header {
     top: 20px;
     width: 100%;
     background: var(--cor-destaque1);
-    color: white;
+    color: var(--cor-branco);
     text-align: center;
     padding: 10px;
 }
@@ -76,7 +84,7 @@ header {
     width: 120px;
 }
 
-/* ✅ HISTÓRIA PERFEITA */
+/* história */
 .conteudo-historia {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -85,20 +93,18 @@ header {
     padding: 20px;
 }
 
-/* texto esquerda */
 .conteudo-historia p:first-child {
     text-align: left;
 }
 
-/* imagem central */
 .conteudo-historia img {
     justify-self: center;
     max-width: 100%;
 }
 
-/* ✅ TEXTO DIREITA COMEÇANDO DA IMAGEM */
+/* ✅ começa da imagem */
 .conteudo-historia p:last-child {
-    justify-self: start;   /* 🔥 IMPORTANTE */
+    justify-self: start;
     text-align: left;
     max-width: 400px;
 }
@@ -125,7 +131,7 @@ footer {
     flex-direction: column;
     align-items: center;
     background: var(--cor-primaria);
-    color: white;
+    color: var(--cor-branco);
     padding: 20px;
 }
 
