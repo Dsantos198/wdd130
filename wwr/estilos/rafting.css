@@ -125,14 +125,18 @@ figure {
     text-align: center;
 }
 
-/* footer */
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* 👈 coloca conteúdo no topo */
     background: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: 20px;
+    padding: -20px; /* 👈 valor normal */
+}
+
+footer p {
+    margin-bottom: 100px; /* 👈 só cria espaço entre o texto e os ícones */
 }
 
 .socialmedia {
