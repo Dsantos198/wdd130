@@ -132,7 +132,7 @@ footer {
     justify-content: flex-start; /* 👈 coloca conteúdo no topo */
     background: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: -20px; /* 👈 valor normal */
+    padding: 20px; /* 👈 valor normal */
 }
 
 footer p {
