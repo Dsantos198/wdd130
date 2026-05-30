@@ -11,18 +11,19 @@
 }
 
 /* reset */
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* base */
+/* base ✅ IMPORTANTE (corrige contraste) */
 body {
     font-family: var(--fonte-body);
+    color: var(--cor-primaria);
 }
 
-/* títulos usando variável ✅ */
+/* títulos */
 h1, h2 {
     font-family: var(--fonte-titulo);
 }
@@ -47,7 +48,7 @@ header {
 
 .grid a {
     text-decoration: none;
-    color: #000; /* ✅ contraste corrigido */
+    color: var(--cor-branco); /* ✅ contraste corrigido */
     font-weight: bold;
 }
 
@@ -76,7 +77,7 @@ header {
     left: 20px;
     right: 20px;
     background: var(--cor-destaque2);
-    padding: 10px;
+    padding: 15px;
 }
 
 .hero article img {
@@ -93,7 +94,12 @@ header {
     padding: 20px;
 }
 
-.conteudo-historia p:first-child {
+.conteudo-historia p {
+    max-width: 400px;
+}
+
+.conteudo-historia p:last-child {
+    justify-self: start;
     text-align: left;
 }
 
@@ -102,19 +108,12 @@ header {
     max-width: 100%;
 }
 
-/* ✅ começa da imagem */
-.conteudo-historia p:last-child {
-    justify-self: start;
-    text-align: left;
-    max-width: 400px;
-}
-
 /* galeria */
 .galeria {
     display: flex;
     gap: 10px;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .galeria img {
@@ -125,26 +124,6 @@ figure {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* 👈 coloca conteúdo no topo */
-    background: var(--cor-primaria);
-    color: var(--cor-branco);
-    padding: 20px; /* 👈 valor normal */
-}
-
-footer p {
-    margin-bottom: 20px; /* 👈 só cria espaço entre o texto e os ícones */
-}
-
-.socialmedia {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 /* section */
 section {
     display: flex;
@@ -152,4 +131,26 @@ section {
     align-items: center;
     color: var(--cor-primaria);
     border: 20px solid var(--cor-primaria);
+    padding: 20px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
