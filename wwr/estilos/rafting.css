@@ -10,25 +10,21 @@
     --fonte-body: arial, sans-serif;
 }
 
-/* reset */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* base */
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-primaria); /* ✅ cor padrão acessível */
+    color: var(--cor-primaria);
 }
 
-/* títulos */
 h1, h2 {
     font-family: var(--fonte-titulo);
 }
 
-/* header */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -37,23 +33,21 @@ header {
     padding: 10px;
 }
 
-/* ✅ MENU CORRIGIDO (ACESSIBILIDADE OK) */
 .grid {
     display: flex;
     justify-content: space-around;
     list-style: none;
     background-color: var(--cor-secundaria);
     padding: 10px;
-    color: #000; /* ✅ evita herdar verde */
+    color: #000;
 }
 
 .grid a {
     text-decoration: none;
-    color: #000; /* ✅ contraste correto */
+    color: #000;
     font-weight: bold;
 }
 
-/* hero */
 .hero {
     position: relative;
 }
@@ -86,7 +80,6 @@ header {
     width: 120px;
 }
 
-/* história */
 .conteudo-historia {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -109,7 +102,6 @@ header {
     max-width: 100%;
 }
 
-/* galeria */
 .galeria {
     display: flex;
     gap: 10px;
@@ -125,7 +117,6 @@ figure {
     text-align: center;
 }
 
-/* section */
 section {
     display: flex;
     flex-direction: column;
@@ -135,7 +126,6 @@ section {
     padding: 20px;
 }
 
-/* footer */
 footer {
     display: flex;
     flex-direction: column;
