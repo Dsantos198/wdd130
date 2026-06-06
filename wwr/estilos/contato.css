@@ -1,22 +1,5 @@
-:root {
-    --cor-primaria: #055a05;
-    --cor-secundaria: #f4a261;
-    --cor-destaque1: #264653;
-    --cor-destaque2: #e9c46a;
-    --cor-fundo-claro: #ddd;
-    --cor-branco: #ffffff;
-
-    --fonte-titulo: "Times New Roman", serif;
-    --fonte-body: Arial, sans-serif;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+/* =========================
+   RESETbody {   RESET / CONFIGURAÇÃO BASE
     font-family: var(--fonte-body);
     color: var(--cor-primaria);
 }
@@ -25,6 +8,9 @@ h1, h2 {
     font-family: var(--fonte-titulo);
 }
 
+/* =========================
+   HEADER / MENU
+========================= */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -48,38 +34,33 @@ header {
     font-weight: bold;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-}
 
 .hero h1 {
-    position: absolute;
+    position: right;
     top: 20px;
-    width: 100%;
+    width: auto;
     background: var(--cor-destaque1);
     color: var(--cor-branco);
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .hero article {
-    position: absolute;
+    position: auto;
     bottom: 0;
     left: 20px;
     right: 20px;
     background: var(--cor-destaque2);
-    padding: 15px;
+    padding: 1px;
+    text-align: center;
+    
 }
 
-.hero article img {
-    float: right;
-    width: 120px;
-}
 
+
+/* =========================
+   SEÇÃO HISTÓRIA
+========================= */
 .conteudo-historia {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -102,6 +83,9 @@ header {
     max-width: 100%;
 }
 
+/* =========================
+   GALERIA
+========================= */
 .galeria {
     display: flex;
     gap: 10px;
@@ -117,6 +101,9 @@ figure {
     text-align: center;
 }
 
+/* =========================
+   SEÇÕES GERAIS
+========================= */
 section {
     display: flex;
     flex-direction: column;
@@ -126,6 +113,9 @@ section {
     padding: 20px;
 }
 
+/* =========================
+   FOOTER
+========================= */
 footer {
     display: flex;
     flex-direction: column;
@@ -140,6 +130,7 @@ footer p {
     margin-bottom: 20px;
 }
 
+/* Redes sociais */
 .socialmedia {
     display: flex;
     justify-content: center;
@@ -155,3 +146,28 @@ footer p {
     transform: scale(1.1);
     cursor: pointer;
 }
+========================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   VARIÁVEIS GLOBAIS
+========================= */
+:root {
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
+    --cor-fundo-claro: #ddd;
+    --cor-branco: #ffffff;
+
+    --fonte-titulo: "Times New Roman", serif;
+    --fonte-body: Arial, sans-serif;
+}
+
+/* =========================
+   TIPOGRAFIA
+========================= */
