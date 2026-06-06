@@ -1,26 +1,42 @@
-<h1> Questionário de HTML e CSS </h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+
+<h1 class="titulo">Questionário de HTML e CSS</h1>
 
 <form>
 
-    <fildset>
-        <legend>O que significa a sigla CSS?</legend>
-        <div class="item-formulario">
-            <input type="radio" id="cascading" name="css" value="cascading">
-            <label for="cascading">Cascading Style Sheets</label>
-        </div>
-        <div class="item-formulario">
-            <input type="radio" id="css" name="css" value="css">
-            <label for="css">Cascading Style Sheets</label>
-        </div>
-    </fildset>
-    
+    <label>1. O que significa a sigla CSS?</label>
+    <input type="text">
 
+    <label>2. Como os atributos 'id' e 'class' são selecionados no CSS?</label>
+    <textarea></textarea>
 
+    <label>3. Qual das opções abaixo é um comentário CSS válido?</label>
+    <select>
+        <option>Escolha uma...</option>
+        <option>/* comentário */</option>
+        <option>// comentário</option>
+        <option># comentário</option>
+    </select>
 
+    <label>4. Qual é a margem inferior dada por esta declaração?</label>
 
+    <div class="codigo">
+        margin: 10px 5px 15px;
+    </div>
 
+    <input type="text">
 
-
-
+    <button type="submit">ENVIAR QUESTIONÁRIO</button>
 
 </form>
+
+</body>
+</html>
