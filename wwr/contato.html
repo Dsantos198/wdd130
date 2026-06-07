@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | Corredeiras Rafting</title>
-    <link rel="stylesheet" href="estilos/contato.css">
+
+    <title>Fale Conosco | Corredeiras Rafting</title>
+
+    <meta name="description" content="Entre em contato com a Corredeiras Rafting para dúvidas e reservas.">
+    <meta name="author" content="Seu Nome">
+
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagens/logo.png" alt="Logo">
+    <img src="imagens/logo.png" alt="Logo da empresa Corredeiras Rafting">
 
     <nav>
         <ul class="grid">
             <li><a href="index.html">Página Inicial</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="passeios.html">Viagens</a></li>
+            <li><a href="passeios.html">Passeios</a></li>
             <li><a href="contato.html">Fale Conosco</a></li>
         </ul>
     </nav>
@@ -42,61 +47,71 @@
         <div class="mapa">
             <iframe 
                 src="https://www.google.com/maps?q=Foz+do+Iguaçu&output=embed"
-                style="border:0;" 
-                loading="lazy">
-            </iframe>
+                loading="lazy"></iframe>
         </div>
 
         <!-- FORM -->
         <form>
+
             <h2>Envie sua mensagem</h2>
 
-            <label>Nome</label>
-            <input type="text" placeholder="Digite aqui">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
 
-            <label>Email</label>
-            <input type="email" placeholder="Digite aqui">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
 
-            <label>Propósito da Mensagem</label>
-
-            <label><input type="radio" name="tipo"> Dúvida Geral</label>
-            <label><input type="radio" name="tipo"> Pergunta sobre Reserva</label>
-            <label><input type="radio" name="tipo"> Sugestão</label>
-
-            <label>Mensagem</label>
-            <textarea rows="4" placeholder="Digite aqui"></textarea>
+            <p>Propósito da Mensagem</p>
 
             <label>
-                <input type="checkbox">
-                Por favor, me inscreva na newsletter mensal
+                <input type="radio" name="tipo" id="geral">
+                Dúvida Geral
             </label>
 
-            <button>Entrar em Contato</button>
+            <label>
+                <input type="radio" name="tipo" id="reserva">
+                Pergunta sobre Reserva
+            </label>
+
+            <label>
+                <input type="radio" name="tipo" id="sugestao">
+                Sugestão
+            </label>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Quero receber a newsletter mensal
+            </label>
+
+            <button type="submit">Entrar em Contato</button>
+
         </form>
 
     </div>
 
 </section>
 
-<!-- FUNCIONÁRIOS -->
 <section class="funcionarios">
 
     <h2>Estamos Aqui para Servi-lo</h2>
 
     <div class="cards">
         <figure>
-            <img src="imagens/funcionario1.jpg">
-            <figcaption>Perfil do Funcionário</figcaption>
+            <img src="imagens/funcionario1.jpg" alt="Funcionário guia de rafting">
+            <figcaption>Guia de Rafting</figcaption>
         </figure>
 
         <figure>
-            <img src="imagens/funcionario2.jpg">
-            <figcaption>Perfil do Funcionário</figcaption>
+            <img src="imagens/funcionario2.jpg" alt="Instrutor de segurança">
+            <figcaption>Instrutor de Segurança</figcaption>
         </figure>
 
         <figure>
-            <img src="imagens/funcionario3.jpg">
-            <figcaption>Perfil do Funcionário</figcaption>
+            <img src="imagens/funcionario3.jpg" alt="Gerente de operações">
+            <figcaption>Gerente de Operações</figcaption>
         </figure>
     </div>
 
@@ -105,15 +120,14 @@
 </main>
 
 <footer>
-    <p>© 2026 corredeiras rafting</p>
+    <p>© 2026 Corredeiras Rafting | Seu Nome</p>
 
-    <div class="socialmedia">
-        <img src="imagens/facebook.png">
-        <img src="imagens/linkedin.png">
-        <img src="imagens/instagram.png">
-    </div>
+    <nav class="redes-sociais">
+        <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+    </nav>
 </footer>
 
 </body>
 </html>
-``
