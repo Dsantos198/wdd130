@@ -265,7 +265,7 @@ form button:hover {
 .funcionarios {
     border: 1px solid #999;
     margin-top: 20px;
-    padding: 15px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -297,4 +297,36 @@ footer {
 .redes-sociais img {
     width: 25px;
     cursor: pointer;
+}
+
+.equipe {
+  text-align: center;
+  padding: 20px;
+}
+
+.equipe h2 {
+  color: green;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espaço entre os itens */
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
 }
