@@ -2,22 +2,16 @@
 <html lang="pt-BR">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sobre Nós | Corredeiras Rafting</title>
-
-    <meta name="author" content="Davi Victor">
-    <meta name="description" content="Conheça a Corredeiras Rafting e nossa história de aventura, segurança e conexão com a natureza em experiências inesquecíveis.">
-
+    <title>Contato | Corredeiras Rafting</title>
     <link rel="stylesheet" href="estilos/contato.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagens/logo.png" alt="logotipo rafting">
+    <img src="imagens/logo.png" alt="Logo">
 
     <nav>
         <ul class="grid">
@@ -31,87 +25,95 @@
 
 <main>
 
-    <div class="hero">
+<section class="contato">
 
-        <article>
-            
-            <h1>Campanha de Rafting em Corredeiras</h1>
-           
-            <p>
-                <h2> 123 Rua Principal do Rio </h2>
-                <h2> Foz do Iguaçu, Paraná </h2>
-                <h2> Telefone: (45) 1234-5678 </h2>
-                <h2> Email: contato@corredeirasrafting.com.br </h2>
+    <h1>Companhia de Rafting em Corredeiras</h1>
 
-            </p>
-        </article>
+    <div class="info">
+        <p>123 Rua Principal do Rio</p>
+        <p>Foz do Iguaçu, Paraná</p>
+        <p>+55 45 99999-9999</p>
+        <p>info@corredeiras.com</p>
     </div>
 
-    <section class="historia">
-        <h2>história</h2>
+    <div class="contato-container">
 
-        <div class="conteudo-historia">
-            <p>
-                A Corredeiras Rafting nasceu do sonho de transformar a paixão pela natureza
-                em experiências inesquecíveis. Desde o início, buscamos proporcionar momentos
-                únicos, sempre com segurança e respeito ao meio ambiente.
-            </p>
-
-            <img src="imagens/rafting-07.jpg" alt="aventura no rio">
-
-            <p>
-                Mais do que um esporte, o rafting é uma experiência emocionante. Cada descida
-                pelas corredeiras traz adrenalina, superação e conexão com a natureza,
-                criando memórias inesquecíveis.
-            </p>
+        <!-- MAPA -->
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps?q=Foz+do+Iguaçu&output=embed"
+                style="border:0;" 
+                loading="lazy">
+            </iframe>
         </div>
-    </section>
 
-    <section class="aventura">
-        <h2>a aventura está te esperando!</h2>
+        <!-- FORM -->
+        <form>
+            <h2>Envie sua mensagem</h2>
 
-        <div class="galeria">
-            <figure>
-                <img src="imagens/rafting-01.jpg" alt="rio negro">
-                <figcaption>rio negro</figcaption>
-            </figure>
+            <label>Nome</label>
+            <input type="text" placeholder="Digite aqui">
 
-            <figure>
-                <img src="imagens/rafting-02.jpg" alt="paranapanema">
-                <figcaption>paranapanema</figcaption>
-            </figure>
+            <label>Email</label>
+            <input type="email" placeholder="Digite aqui">
 
-            <figure>
-                <img src="imagens/rafting-03.jpg" alt="jacaré">
-                <figcaption>jacaré</figcaption>
-            </figure>
+            <label>Propósito da Mensagem</label>
 
-            <figure>
-                <img src="imagens/rafting-04.jpg" alt="corredeira">
-                <figcaption>corredeira</figcaption>
-            </figure>
-        </div>
-    </section>
+            <label><input type="radio" name="tipo"> Dúvida Geral</label>
+            <label><input type="radio" name="tipo"> Pergunta sobre Reserva</label>
+            <label><input type="radio" name="tipo"> Sugestão</label>
+
+            <label>Mensagem</label>
+            <textarea rows="4" placeholder="Digite aqui"></textarea>
+
+            <label>
+                <input type="checkbox">
+                Por favor, me inscreva na newsletter mensal
+            </label>
+
+            <button>Entrar em Contato</button>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FUNCIONÁRIOS -->
+<section class="funcionarios">
+
+    <h2>Estamos Aqui para Servi-lo</h2>
+
+    <div class="cards">
+        <figure>
+            <img src="imagens/funcionario1.jpg">
+            <figcaption>Perfil do Funcionário</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagens/funcionario2.jpg">
+            <figcaption>Perfil do Funcionário</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagens/funcionario3.jpg">
+            <figcaption>Perfil do Funcionário</figcaption>
+        </figure>
+    </div>
+
+</section>
 
 </main>
 
 <footer>
-    <p>&copy; 2026 corredeiras rafting | Davi Victor</p>
+    <p>© 2026 corredeiras rafting</p>
 
-    <nav class="socialmedia">
-        <a href="https://www.facebook.com/" target="_blank">
-            <img src="imagens/facebook.png" alt="facebook">
-        </a>
-
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="imagens/linkedin.png" alt="linkedin">
-        </a>
-
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="imagens/instagram.png" alt="instagram">
-        </a>
-    </nav>
+    <div class="socialmedia">
+        <img src="imagens/facebook.png">
+        <img src="imagens/linkedin.png">
+        <img src="imagens/instagram.png">
+    </div>
 </footer>
 
 </body>
 </html>
+``
