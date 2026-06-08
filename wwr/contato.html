@@ -10,7 +10,7 @@
     <meta name="description" content="Entre em contato com a Corredeiras Rafting para dúvidas, reservas e suporte técnico.">
     <meta name="author" content="Davi Victor">
 
-    <link rel="stylesheet" href="estilos/rafting01.css">
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
@@ -62,32 +62,22 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email">
 
-            <p>Propósito da Mensagem</p>
+           <p>Propósito da Mensagem</p>
 
-            <!-- ✅ RADIO CORRETO -->
-            <label>
-                <input type="radio" name="tipo" value="geral">
-                Dúvida Geral
-            </label>
+<label for="geral">
+    <input type="radio" id="geral" name="tipo" value="geral">
+    Dúvida Geral
+</label>
 
-            <label>
-                <input type="radio" name="tipo" value="reserva">
-                Pergunta sobre Reserva
-            </label>
+<label for="reserva">
+    <input type="radio" id="reserva" name="tipo" value="reserva">
+    Pergunta sobre Reserva
+</label>
 
-            <label>
-                <input type="radio" name="tipo" value="sugestao">
-                Sugestão
-            </label>
-
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
-
-            <!-- ✅ CHECKBOX CORRETO -->
-            <label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                Quero receber a newsletter mensal
-            </label>
+<label for="sugestao">
+    <input type="radio" id="sugestao" name="tipo" value="sugestao">
+    Sugestão
+</label>
 
             <button type="submit">Entrar em Contato</button>
 
