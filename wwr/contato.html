@@ -52,42 +52,35 @@
         <!-- FORM -->
         <form>
 
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
 
-            <fieldset>
-                <legend>Propósito da Mensagem</legend>
+    <fieldset>
+        <legend>Propósito da Mensagem</legend>
 
-                <label>
-                    <input type="radio" name="assunto" value="duvida" required>
-                    Dúvida Geral
-                </label>
+        <input type="radio" id="duvida" name="assunto" value="duvida" required>
+        <label for="duvida">Dúvida Geral</label>
 
-                <label>
-                    <input type="radio" name="assunto" value="reserva">
-                    Pergunta sobre Reserva
-                </label>
+        <input type="radio" id="reserva" name="assunto" value="reserva">
+        <label for="reserva">Pergunta sobre Reserva</label>
 
-                <label>
-                    <input type="radio" name="assunto" value="sugestao">
-                    Sugestão
-                </label>
-            </fieldset>
+        <input type="radio" id="sugestao" name="assunto" value="sugestao">
+        <label for="sugestao">Sugestão</label>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    </fieldset>
 
-            <label>
-                <input type="checkbox" name="newsletter">
-                Quero receber a newsletter mensal
-            </label>
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-            <button type="submit">Enviar Mensagem</button>
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Quero receber a newsletter mensal</label>
 
-        </form>
+    <button type="submit">Enviar Mensagem</button>
+
+</form>
 
     </div>
 
