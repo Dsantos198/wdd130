@@ -1,54 +1,41 @@
-/* ===== VARIÁVEIS ===== */
 :root {
     --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
-    --cor-destaque1: #264653;
-    --cor-destaque2: #e9c46a;
     --cor-fundo: #f5f5f5;
-    --cor-fundo-claro: #ddd;
-    --cor-branco: #ffffff;
-
-    --fonte-titulo: "Times New Roman", serif;
-    --fonte-body: Arial, sans-serif;
 }
 
-/* ===== RESET ===== */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+/* BODY */
 body {
-    font-family: var(--fonte-body);
-    background: #eee;
+    font-family: Arial, sans-serif;
+    background: var(--cor-fundo);
     color: var(--cor-primaria);
 }
 
-/* ===== TITULOS ===== */
-h1, h2 {
-    font-family: var(--fonte-titulo);
-}
-
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     background: var(--cor-secundaria);
     padding: 15px;
     text-align: center;
+    color: black;
 }
 
 header img {
     width: 120px;
 }
 
-/* ===== MENU ===== */
+/* MENU */
 .grid {
     display: flex;
     justify-content: center;
     gap: 20px;
     list-style: none;
-    margin-top: 10px;
 }
 
 .grid a {
@@ -57,83 +44,17 @@ header img {
     font-weight: bold;
 }
 
-/* ===== MAIN ===== */
+/* MAIN */
 main {
     max-width: 1000px;
     margin: 20px auto;
-    background: var(--cor-fundo);
     padding: 20px;
 }
 
-/* ===== HERO ===== */
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.hero h1 {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-/* ===== HISTÓRIA ===== */
-.historia {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.conteudo-historia {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.conteudo-historia img {
-    width: 100%;
-}
-
-/* ===== GALERIA ===== */
-.galeria {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.fotos img {
-    width: 220px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.fotos img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-/* ===== CONTATO ===== */
+/* CONTATO */
 .contato h1 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .info {
@@ -168,7 +89,6 @@ form textarea {
 }
 
 form button {
-    margin-top: 10px;
     padding: 10px;
     background: var(--cor-primaria);
     color: white;
@@ -180,56 +100,39 @@ form button:hover {
     background: #033803;
 }
 
-/* ===== FUNCIONÁRIOS ===== */
+/* FUNCIONÁRIOS */
 .funcionarios {
-    border: 1px solid #999;
-    margin-top: 20px;
-    padding: 40px;
+    margin-top: 30px;
     text-align: center;
-    padding-top: 0%;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .cards img {
-    width: 220px;
-    height: 150px;
-    object-fit: cover;
+    width: 200px;
     border-radius: 10px;
 }
 
-.cards figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     background: var(--cor-primaria);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
-/* REDES SOCIAIS */
+/* REDES */
 .redes-sociais {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
+    gap: 15px;
 }
 
 .redes-sociais img {
-    width: 50px; /* ✅ tamanho correto */
-    height: auto;
-    cursor: pointer;
-}
-
-.redes-sociais img:hover {
-    transform: scale(1.1);
+    width: 30px;
 }
