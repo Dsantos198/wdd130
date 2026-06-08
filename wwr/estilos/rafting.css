@@ -16,18 +16,24 @@ body {
     color: var(--cor-primaria);
 }
 
+/* HEADER CENTRALIZADO */
 header {
     background: var(--cor-secundaria);
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 }
 
-
-
-
+/* LOGO CENTRALIZADA */
 header img {
     width: 120px;
+    display: block;
+    margin-bottom: 10px;
 }
 
+/* MENU */
 .grid {
     display: flex;
     justify-content: center;
