@@ -1,7 +1,13 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 :root {
     --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
     --cor-fundo: #f5f5f5;
+    --cor-fundo-claro: #ddd;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
 }
 
 * {
@@ -16,32 +22,33 @@ body {
     color: var(--cor-primaria);
 }
 
-/* HEADER CENTRALIZADO */
+/* =========================
+   HEADER GLOBAL
+========================= */
 header {
     background: var(--cor-secundaria);
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
 }
 
-/* LOGO CENTRALIZADA */
 header img {
     width: 120px;
-    display: block;
     margin-bottom: 10px;
 }
 
-/* MENU */
-.grid {
+/* =========================
+   MENU GLOBAL
+========================= */
+nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
     list-style: none;
 }
 
-.grid a {
+nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -53,87 +60,350 @@ main {
     padding: 20px;
 }
 
-.contato h1 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contato-container {
+/* =========================
+   PÁGINA CONTATO
+========================= */
+.pagina-contato .contato-container {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.mapa iframe {
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
-    border: 0;
-}
-
-form {
+.pagina-contato form {
     width: 350px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
 }
 
-form input,
-form textarea {
+.pagina-contato form input,
+.pagina-contato form textarea {
     padding: 8px;
     border: 1px solid #ccc;
 }
 
-form button {
+.pagina-contato form button {
     padding: 10px;
     background: var(--cor-primaria);
     color: white;
     border: none;
-    cursor: pointer;
 }
 
-form button:hover {
+.pagina-contato form button:hover {
     background: #033803;
 }
 
-.funcionarios {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.cards {
+.pagina-contato .cards {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.cards img {
+.pagina-contato .cards img {
     width: 180px;
-    height: 120px;
-    object-fit: cover;
     border-radius: 10px;
+    text-align: center;
 }
 
-footer {
-    background: var(--cor-primaria);
+.pagina-contato .funcionarios h2 {
+    text-align: center;
+}
+
+
+.pagina-contato .contato,
+.pagina-contato .info {
+    text-align: center;
+}
+
+.pagina-contato .redes-sociais img {
+    width: 30px;
+}
+
+/* =========================
+   PÁGINA SOBRE-NOS (IGUAL À IMAGEM)
+========================= */
+
+/* FUNDO CINZA */
+.sobre-nos {
+    background: #e6e6e6;
+}
+
+/* HEADER */
+.sobre-nos header {
+    background: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CAIXA CENTRAL */
+.sobre-nos main {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border: 8px solid darkgreen;
+    padding: 15px;
+}
+
+/* HERO */
+.sobre-nos .hero {
+    width: 100%;
+}
+
+.sobre-nos .hero img {
+    width: 100%;
+}
+
+.sobre-nos .hero h1 {
+    background: darkgreen;
     color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* MISSÃO */
+.sobre-nos article {
+    background: var(--cor-destaque2);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.sobre-nos article img {
+    width: 120px;
+    float: right;
+    margin-left: 10px;
+}
+
+/* HISTÓRIA */
+.sobre-nos .conteudo-historia {
+    background: #f5fff5;
+    border: 6px solid darkgreen;
+    padding: 10px;
+    margin: 10px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 120px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.sobre-nos .conteudo-historia img {
+    width: 100%;
+}
+
+/* GALERIA (VERTICAL) */
+.sobre-nos .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-nos .galeria figure {
+    width: 100%;
+    text-align: center;
+}
+
+.sobre-nos .galeria img {
+    width: 100%;
+    text-align: center;
+}
+
+/* TÍTULOS */
+.sobre-nos h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* ÍCONES */
+.sobre-nos .socialmedia img {
+    width: 20px;
+}
+
+/* =========================
+   PÁGINA INICIAL
+========================= */
+.pagina-inicial .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* MENU AZUL */
+.pagina-inicial header {
+    background: steelblue;
+}
+
+.pagina-inicial nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagina-inicial nav a {
+    color: white;
+}
+
+/* ASIDE */
+.pagina-inicial aside {
+    background: #ddd;
     padding: 20px;
     text-align: center;
 }
 
-.redes-sociais {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.pagina-inicial aside img {
+    width: 100%;
+    margin: 10px 0;
 }
 
-.redes-sociais img {
+/* MAIN */
+.pagina-inicial main {
+    background: #ddd;
+    padding: 20px;
+    border: 3px solid #aaa;
+}
+
+/* PERFIL */
+.pagina-inicial .perfil {
+    width: 150px;
+    float: right;
+    margin-left: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px gray;
+}
+
+/* CAIXA */
+.pagina-inicial .caixa {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #aaa;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.pagina-inicial .redes-sociais img {
+    width: 25px;
+}
+
+.pagina-inicial nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pagina-inicial nav a {
+    padding: 10px 15px;
+}
+
+
+
+/* =========================
+   PÁGINA PASSEIOS
+========================= */
+
+/* FUNDO */
+.pagina-passeios {
+    background: #e6e6e6;
+}
+
+/* MAIN CENTRAL */
+.pagina-passeios main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* TÍTULO */
+.pagina-passeios h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GRID (REQUISITO IMPORTANTE) */
+.pagina-passeios .grid-passeios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARDS DOS PASSEIOS */
+.pagina-passeios .card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pagina-passeios .card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* TABELA */
+.pagina-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.pagina-passeios th,
+.pagina-passeios td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.pagina-passeios th {
+    background: var(--cor-secundaria);
+}
+
+/* CTA (BOTÃO CONTATO) */
+.pagina-passeios .cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagina-passeios .botao {
+    background: var(--cor-primaria);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =========================
+   TAMANHO DOS ÍCONES
+========================= */
+
+/* CONTATO */
+.pagina-contato .redes-sociais img {
     width: 30px;
+}
+
+/* SOBRE */
+.sobre-nos .socialmedia img {
+    width: 20px;
+}
+
+/* PÁGINA INICIAL */
+.pagina-inicial .redes-sociais img {
+    width: 25px;
+}
+
+/* PASSEIOS */
+.pagina-passeios .socialmedia img {
+    width: 25px;
 }
